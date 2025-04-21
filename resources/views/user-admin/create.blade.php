@@ -1,0 +1,47 @@
+@extends('layouts.app')
+
+@section('page_title', 'User')
+@section('page_breadcrumb', 'User')
+
+@section('content')
+    <div class="rounded-xl p-5 border">
+        <form action="{{ route('users.store') }}" method="POST">
+            @csrf
+            <div class="flex justify-between gap-10">
+                <div class="flex flex-col w-full">
+                    <label for="name">Nama</label>
+                    <input type="text" class="mt-2 bg-transparent p-2 px-3 border rounded-lg" id="name" name="name"
+                        value="{{ old('name') }}">
+                </div>
+                <div class="flex flex-col w-full">
+                    <label for="email">Email</label>
+                    <input type="email" class="mt-2 bg-transparent p-2 px-3 border rounded-lg" id="email"
+                        name="email" value="{{ old('email') }}">
+
+                    @error('email')
+                        <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                    @enderror
+                </div>
+            </div>
+            <div class="flex justify-between gap-10 mt-5">
+                <div class="flex flex-col w-full">
+                    <label for="role">Role</label>
+                    <div class="relative mt-2">
+                        <select name="role" id="role" class="w-full p-2 rounded-lg bg-transparent border px-3">
+                            <option value="">Pilih Role</option>
+                            <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Admin</option>
+                            <option value="employee" {{ old('role') == 'employee' ? 'selected' : '' }}>Petugas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="mt-2 bg-transparent p-2 px-3 border rounded-lg">
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <button class="btn-primary mt-4 flex items-end" type="submit">Simpan</button>
+            </div>
+        </form>
+    </div>
+@endsection

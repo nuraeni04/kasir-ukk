@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2,
+h3,
+span,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+th,
+th {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #435ebe;
+  --bs-btn-border-color: #435ebe;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3950a2;
+  --bs-btn-hover-border-color: #364b98;
+  --bs-btn-focus-shadow-rgb: 95, 118, 200;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #364b98;
+  --bs-btn-active-border-color: #32478f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #435ebe;
+  --bs-btn-disabled-border-color: #435ebe;
+
+  --bs-btn-bg-delete: #be3d2a;
+  --bs-btn-border-color-delete: #be3d2a;
+  --bs-btn-hover-bg-delete: #a8321f;
+  --bs-btn-hover-border-color-delete: #902b1a;
+  --bs-btn-active-bg-delete: #902b1a;
+  --bs-btn-active-border-color-delete: #902b1a;
+  --bs-btn-disabled-bg-delete: #be3d2a;
+  --bs-btn-disabled-border-color-delete: #be3d2a;
+  --bs-btn-focus-shadow-rgb-delete: 190, 61, 42;
+
+  --bs-btn-bg-edit: #feba17;
+  --bs-btn-border-color-edit: #feba17;
+  --bs-btn-hover-bg-edit: #e0a800;
+  --bs-btn-hover-border-color-edit: #d39e00;
+  --bs-btn-active-bg-edit: #c69500;
+  --bs-btn-active-border-color-edit: #b88600;
+  --bs-btn-disabled-bg-edit: #feba17;
+  --bs-btn-disabled-border-color-edit: #feba17;
+  --bs-btn-focus-shadow-rgb-edit: 254, 186, 23;
+
+  --bs-btn-bg-cancel: #9096a1;
+  --bs-btn-border-color-cancel: #9096a1;
+  --bs-btn-hover-bg-cancel: #9498a1;
+  --bs-btn-hover-border-color-cancel: #9498a1;
+  --bs-btn-active-bg-cancel: #9498a1;
+  --bs-btn-active-border-color-cancel: #9498a1;
+  --bs-btn-disabled-bg-cancel: #9096a1;
+  --bs-btn-disabled-border-color-cancel: #9096a1;
+  --bs-btn-focus-shadow-rgb-cancel: 209, 213, 219;
+}
+
+/* BUTTON BIRU */
+.btn-primary {
+  font-family: sans-serif;
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border: 1px solid var(--bs-btn-border-color);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border: 1px solid var(--bs-btn-hover-border-color);
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  outline: none;
+}
+
+.btn-primary:active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
+  box-shadow: var(--bs-btn-active-shadow);
+  transform: scale(0.98);
+}
+
+.btn-primary:disabled {
+  color: var(--bs-btn-disabled-color);
+  background-color: var(--bs-btn-disabled-bg);
+  border-color: var(--bs-btn-disabled-border-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* BUTTON MERAH */
+.btn-danger {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg-delete);
+  border: 1px solid var(--bs-btn-border-color-delete);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: var(--bs-btn-hover-bg-delete);
+  border: 1px solid var(--bs-btn-hover-border-color-delete);
+}
+
+.btn-danger:focus {
+  border: 1px solid var(--bs-btn-hover-border-color-delete);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb-delete), 0.5);
+  outline: none;
+}
+
+.btn-danger:active {
+  background-color: var(--bs-btn-active-bg-delete);
+  border: 1px solid var(--bs-btn-active-border-color-delete);
+  box-shadow: var(--bs-btn-active-shadow);
+  transform: scale(0.98);
+}
+
+.btn-danger:disabled {
+  background-color: var(--bs-btn-disabled-bg-delete);
+  border: 1px solid var(--bs-btn-disabled-border-color-delete);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* BUTTON KUNING */
+.btn-warning {
+  font-family: sans-serif;
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg-edit);
+  border: 1px solid var(--bs-btn-border-color-edit);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-warning:hover {
+  background-color: var(--bs-btn-hover-border-color-edit);
+  border-color: var(--bs-btn-hover-border-color-edit);
+}
+
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb-edit), 0.5);
+  outline: none;
+}
+
+.btn-warning:active {
+  background-color: var(--bs-btn-active-bg-edit);
+  border-color: var(--bs-btn-active-border-color-edit);
+  box-shadow: var(--bs-btn-active-shadow);
+  transform: scale(0.98);
+}
+
+.btn-warning:disabled {
+  background-color: var(--bs-btn-disabled-bg-edit);
+  border-color: var(--bs-btn-disabled-border-color-edit);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  font-family: sans-serif;
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg-cancel); /* Menggunakan variabel root */
+  border: 1px solid var(--bs-btn-border-color-cancel); /* Menggunakan variabel root */
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover State */
+.btn-secondary:hover {
+  background-color: var(--bs-btn-hover-bg-cancel); /* Hover dengan variabel */
+  border-color: var(--bs-btn-hover-border-color-cancel);
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb-cancel), 0.5); /* Focus shadow dengan variabel */
+  outline: none;
+}
+
+.btn-secondary:active {
+  background-color: var(--bs-btn-active-bg-cancel);
+  border-color: var(--bs-btn-active-border-color-cancel);
+  box-shadow: var(--bs-btn-active-shadow);
+  transform: scale(0.98);
+}
+
+.btn-secondary:disabled {
+  background-color: var(--bs-btn-disabled-bg-cancel);
+  border-color: var(--bs-btn-disabled-border-color-cancel);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Pagination link yang aktif */
+.page-item.active .page-link {
+  background-color: #007bff; /* Biru */
+  color: white; /* Warna teks putih */
+  border-color: #007bff; /* Border biru */
+}
+
+/* Menambahkan efek hover pada pagination link */
+.page-item .page-link:hover {
+  background-color: #0056b3; /* Biru lebih gelap saat hover */
+  color: white;
+}
+
+/* CSS yang lebih spesifik untuk pagination */
+.pagination .page-item.active .page-link {
+  background-color: #007bff; /* Biru */
+  color: white; /* Warna teks putih */
+  border-color: #007bff; /* Border biru */
+}
+
+/* Efek hover untuk tombol pagination */
+.pagination .page-item .page-link:hover {
+  background-color: #0056b3; /* Biru lebih gelap saat hover */
+  color: white;
+}
+
+/* Pastikan border tombol tidak hilang */
+.pagination .page-item .page-link {
+  border: 1px solid #dee2e6;
+}
